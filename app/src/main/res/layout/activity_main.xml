@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00838F"
+        android:elevation="10dp"
+        android:outlineProvider="bounds" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/adView"
+        android:layout_below="@id/toolbarLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f3f3f3"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/legislacaoid"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_rowWeight="1"
+                android:background="#FFAB00"
+                app:cardBackgroundColor="#EF5350"
+                android:foreground="?selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:src="@drawable/codigocinza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Legislação de trânsito"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/placasid"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:foreground="?selectableItemBackground"
+                android:layout_alignLeft="@+id/meioambienteid"
+                android:layout_alignStart="@+id/meioambienteid"
+                android:layout_alignTop="@+id/funcionamentodoveiculoid"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="#FFAB00"
+                app:cardBackgroundColor="#EC407A"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:src="@drawable/placas" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placas"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/meioambienteid"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:foreground="?selectableItemBackground"
+                android:layout_alignLeft="@+id/direcaodefensivaid"
+                android:layout_alignStart="@+id/direcaodefensivaid"
+                android:layout_below="@+id/legislacaoid"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="#FFAB00"
+
+                app:cardBackgroundColor="#43A047"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:src="@drawable/meioambiente" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meio ambiente e convívio social"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/direcaodefensivaid"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:foreground="?selectableItemBackground"
+                android:layout_alignParentRight="true"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_rowWeight="1"
+                android:background="#FFAB00"
+                app:cardBackgroundColor="#0288D1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:src="@drawable/direcaodefensivacinza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Direção defensiva"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/primeirossocorrosid"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:foreground="?selectableItemBackground"
+                android:layout_alignLeft="@+id/legislacaoid"
+                android:layout_alignStart="@+id/legislacaoid"
+                android:layout_below="@+id/legislacaoid"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="#FFAB00"
+                app:cardBackgroundColor="#5C6BC0"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:src="@drawable/primeirossocorroscinza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Primeiros Socorros"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/funcionamentodoveiculoid"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:foreground="?selectableItemBackground"
+                android:layout_alignLeft="@+id/primeirossocorrosid"
+                android:layout_alignStart="@+id/primeirossocorrosid"
+                android:layout_below="@+id/primeirossocorrosid"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="16dp"
+                android:layout_rowWeight="1"
+                android:background="#FFAB00"
+                app:cardBackgroundColor="#EF6C00"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:src="@drawable/menicabasica" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Funcionamento do veículo"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/funcionamentodoveiculoid"
+                android:layout_marginTop="1dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        android:layout_above="@+id/scrollView9"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adsBannerID"
+/>
+
+</RelativeLayout>

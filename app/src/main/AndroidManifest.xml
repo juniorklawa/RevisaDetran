@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.klawapps.qualcelula">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fixed"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".oCodigoDeTransitoBrasileiro" />
+        <activity android:name=".legislacaoCodigoDeTransito" />
+        <activity android:name=".direcaoAcidentes" />
+        <activity android:name=".socorrosConceitos" />
+        <activity android:name=".meioambienteEmissao" />
+        <activity android:name=".funcionamentoEquipamentos" />
+        <activity android:name=".placasRegulamentacao" />
+        <activity android:name=".legislacaoSinalizacaoVertical" />
+        <activity android:name=".legislacaoSinalizacaoHorizontal" />
+        <activity android:name=".direcaoConducaoAdversas" />
+        <activity android:name=".meioambienteManutencao" />
+        <activity android:name=".meioambienteConvivio" />
+        <activity android:name=".meioambienteSociedade" />
+        <activity android:name=".socorrosVerificacaoVitima" />
+        <activity android:name=".legislacaoDiretoseDeveres" />
+        <activity android:name=".legislacaoCrimes" />
+        <activity android:name=".funcionamentoConducao" />
+        <activity android:name=".legislacaoNormasCirculacao" />
+        <activity android:name=".legislacaoPenalidades" />
+        <activity android:name=".direcaoComportamento" />
+        <activity android:name=".direcaoConducaoEmSituacoesDeRisco" />
+        <activity android:name=".direcaoComoEvitarAcidentes" />
+        <activity android:name=".direcaoTiposDeColisao" />
+        <activity android:name=".direcaoConducaoMotocicletas" />
+        <activity android:name=".direcaoEquipamentosMotocicleta" />
+        <activity android:name=".legislacaoGestos" />
+        <activity android:name=".placasAdvertencia" />
+        <activity android:name=".placasIndicativas" />
+        <activity android:name=".placasObras" />
+        <activity android:name=".mainLegislacao" />
+        <activity android:name=".mainDirecao" />
+        <activity android:name=".mainMeioAmbiente" />
+        <activity android:name=".mainPlacas" />
+        <activity android:name=".mainSocorros" />
+        <activity android:name=".mainFuncionamentoVeiculo"></activity>
+    </application>
+
+</manifest>
