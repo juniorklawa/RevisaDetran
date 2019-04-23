@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Revisa Detran</string>
     <string name="title_activity_navigation_drawer">navigationDrawer</string>
-    <string name="adsBannerID">ca-app-pub-1120115677806043/1944996828</string>
-    <string name="adsIntersticialID">ca-app-pub-1120115677806043/2349263452</string>
+    <string name="adsBannerID">xxxxxxxxxxxxxxx</string>
+    <string name="adsIntersticialID">xxxxxxxxxxxxxxxx</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
